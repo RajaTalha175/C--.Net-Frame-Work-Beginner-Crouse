@@ -1,0 +1,640 @@
+///////////////////////// What is C#, .Net Frame Work and ReSharper.
+C# is a programming language created by Microsoft.It’s an object-oriented language (like Java or C++).
+It is simple, modern, and type-safe.Using to build Desktop,Mobile and web Application.
+
+The .NET Framework is a software development framework also by Microsoft.
+Includes:
+CLR (Common Language Runtime): Runs your C# code, manages memory, handles garbage collection.
+BCL (Base Class Library): Pre-built code (for working with files, databases, XML, networking, etc.).
+CTS (Common Type System): Defines how data types (int, string, class, etc.) are declared and used across languages.
+CLS (Common Language Specification): A subset of CTS.Defines a set of rules that all .NET languages must follow to ensure interoperability.
+ReSharper: ReSharper is a Visual Studio extension made by JetBrains.It helps you write cleaner, faster, and more efficient code.
+Include: Error , Unreachable Bugs , Renaming , File Usage and symbols , or Unit Testing.
+
+////////////////////////////////////////////////////////////////////////////
+
+-Arrays and String Sorting
+
+import java.util.Arrays;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Try programiz.pro");
+
+        int[] arr = {9, 5, 1, 10};
+        String str = "programing"; 
+        String[] string1 = {"a", "1", "b", "10"};  
+
+        // Find highest number
+        int num1 = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] >= num1) {
+                num1 = arr[i];
+            }
+        }
+        System.out.println("High number: " + num1);
+
+        // Find second highest number
+        int num2 = Integer.MIN_VALUE;
+        for (int j = 0; j < arr.length; j++) {
+            if (arr[j] < num1 && arr[j] > num2) {
+                num2 = arr[j];
+            }
+        }
+        System.out.println("Second high number: " + num2);
+
+        // Sort ascending
+        for (int k = 0; k < arr.length; k++) {
+            for (int l = k + 1; l < arr.length; l++) {
+                if (arr[k] > arr[l]) {
+                    int temp = arr[k];
+                    arr[k] = arr[l];
+                    arr[l] = temp;
+                }
+            }
+        }
+
+        // Print sorted array
+        System.out.println("Ascending order: " + Arrays.toString(arr));
+
+        // Sort descending
+        for (int k = 0; k < arr.length; k++) {
+            for (int l = k + 1; l < arr.length; l++) {
+                if (arr[k] < arr[l]) {
+                    int temp = arr[k];
+                    arr[k] = arr[l];
+                    arr[l] = temp;
+                }
+            }
+        }
+
+        // Print sorted array
+        System.out.println("Descending order: " + Arrays.toString(arr));
+
+        // Reverse string
+        String rev = "";  
+        for (int m = str.length() - 1; m >= 0; m--) {
+            rev += str.charAt(m);
+        }
+
+        System.out.println("Reversed string: " + rev);
+    }
+}
+int[] arr = {9, 5, 1, 10};
+
+        // Find reverse array
+        int[] reverse = new int[arr.length];
+        int j = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            reverse[j] = arr[i];
+            j++;
+        }
+
+        System.out.println("Reverse: " + Arrays.toString(reverse));
+
+ // Find reverse array
+        String Reversed="";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            Reversed +=str.charAt(i);
+        }
+
+        System.out.println("Reverse: " + Reversed);
+       if (str.equals(Reversed)) {
+            System.out.println(str + " is a palindrome.");
+        } else {
+            System.out.println(str + " is NOT a palindrome.");
+        }
+    }
+    class Main {
+    public static void main(String[] args) {
+        String str = "hello world";
+
+        for (int i = str.length() - 1; i >= 0; i--) {
+            //str.charAt(i) == 'a' || str.charAt(i) == 'e'
+            if ("aeiou".indexOf(str.charAt(i)) != -1) {
+                System.out.println("Vowel: " + str.charAt(i) + " at index " + i);
+            }
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        String[] str = {"p", "a", "d"};
+
+        for (int i = str.length - 1; i >= 0; i--) {
+            //str.charAt(i) == 'a' || str.charAt(i) == 'e'
+            if ("aeiou".indexOf(str[i]) != -1) {
+                System.out.println("Vowel: " + str[i] + " at index " + i);
+            }
+        }
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        String str = "programming";
+
+        for (int i = 0; i < str.length(); i++) {
+            boolean visited = false;
+            char ch = str.charAt(i);
+            int count = 1; // at least one occurrence
+
+            // check if this char already appeared before
+            for (int j = 0; j < i; j++) {
+                if (str.charAt(j) == ch) {
+                    visited = true;
+                    break;
+                }
+            }
+
+            if (visited) continue; // skip already counted chars
+
+            // count frequency of ch in the rest of the string
+            for (int j = i + 1; j < str.length(); j++) {
+                if (str.charAt(j) == ch) {
+                    count++;
+                }
+            }
+
+            System.out.println("Character: " + ch + " -> Frequency: " + count);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        String str = "programming";
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            boolean flag = false;
+
+            // Check if this character already exists in 'result'
+            for (int j = 0; j < result.length(); j++) {
+                if (ch == result.charAt(j)) {
+                    flag = true; // character already added
+                    break;
+                }
+            }
+
+            if (!flag) {
+                result += ch; // add only first occurrence
+            }
+        }
+
+        System.out.println("Character: " + result);
+    }
+}
+
+
+
+import java.util.Arrays; 
+
+class Main { 
+    public static void main(String[] args) {
+        int[] arr = {9, 5, 1, 10, 5, 9};
+        int[] result = new int[arr.length];
+        int k = 0; // index for result array
+
+        for (int i = 0; i < arr.length; i++) {
+            boolean flag = false;
+
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[i] == arr[j]) {
+                    flag = true;
+                    break;
+                }
+            }
+
+            if (!flag) {
+                result[k] = arr[i];
+                k++;
+            }
+        }
+
+        // print only filled part of result
+        System.out.println("Unique elements: " + Arrays.toString(Arrays.copyOf(result, k)));
+    }
+}
+
+/////////////////////
+C# Conditional Statements and Loops Notes
+
+Conditional Statements:
+- if statement
+  int num = 10;
+  if(num > 0)
+      Console.WriteLine("Positive number");
+
+- if-else statement
+  int num = -5;
+  if(num > 0)
+      Console.WriteLine("Positive");
+  else
+      Console.WriteLine("Negative");
+
+- else if statement
+  int marks = 75;
+  if(marks >= 90)
+      Console.WriteLine("Grade A");
+  else if(marks >= 75)
+      Console.WriteLine("Grade B");
+  else if(marks >= 50)
+      Console.WriteLine("Grade C");
+  else
+      Console.WriteLine("Fail");
+
+- switch-case statement
+  int day = 3;
+  switch(day)
+  {
+      case 1:
+          Console.WriteLine("Monday");
+          break;
+      case 2:
+          Console.WriteLine("Tuesday");
+          break;
+      case 3:
+          Console.WriteLine("Wednesday");
+          break;
+      default:
+          Console.WriteLine("Other Day");
+          break;
+  }
+
+Loops:
+
+- for loop
+  for(int i = 1; i <= 5; i++)
+      Console.WriteLine("Number " + i);
+
+- foreach loop
+  string[] fruits = { "Apple", "Banana", "Mango" };
+  foreach(string fruit in fruits)
+      Console.WriteLine(fruit);
+
+- while loop
+  int i = 1;
+  while(i <= 5)
+  {
+      Console.WriteLine("Count " + i);
+      i++;
+  }
+
+- do-while loop
+  int j = 1;
+  do
+  {
+      Console.WriteLine("Value " + j);
+      j++;
+  } while(j <= 5);
+
+
+Lists:
+
+- List example
+  List<int> nums = new List<int>() { 1, 2, 3, 4, 5 };
+  nums.Add(6);
+  nums.Remove(2);
+  foreach(int n in nums)
+      Console.WriteLine(n);
+
+- Exercise: Sum of all elements in list
+  int sum = 0;
+  foreach(int n in nums)
+      sum += n;
+  Console.WriteLine("Sum: " + sum);
+
+- Exercise: Find even numbers in list
+  foreach(int n in nums)
+      if(n % 2 == 0)
+          Console.WriteLine("Even: " + n);
+
+
+//////////////
+Variables:
+- A variable is a storage location in memory with a name and type.
+- Example:
+  int age = 25;
+  string name = "Talha";
+  double price = 99.99;
+
+Constants:
+- A constant value cannot be changed once assigned.
+- Example:
+  const double PI = 3.14159;
+  const string AppName = "MyApp";
+
+Overflow:
+- Overflow occurs when a value exceeds the storage capacity of its data type.
+- Can be checked using 'checked' keyword:
+  int max = int.MaxValue;
+  int result = checked(max + 1);
+
+Structs:
+- Struct is a value type used to group variables.
+- Example:
+  struct Point
+  {
+      public int X;
+      public int Y;
+  }
+  Point p;
+  p.X = 10;
+  p.Y = 20;
+
+Classes:
+- Class is a reference type and can contain fields, methods, properties, and constructors.
+- Example:
+  class Person
+  {
+      public string Name;
+      public int Age;
+
+      public void Greet()
+      {
+          Console.WriteLine("Hello " + Name);
+      }
+  }
+  Person p1 = new Person();
+  p1.Name = "Ali";
+  p1.Age = 30;
+  p1.Greet();
+
+Enums:
+- Enum is a set of named constants.
+- Example:
+  enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday }
+  Days today = Days.Monday;
+  Console.WriteLine(today);
+
+
+/////////////////
+
+
+
+C# DateTime, TimeSpan, String and StringBuilder Notes
+
+DateTime:
+
+- Get current date and time
+  DateTime now = DateTime.Now;
+  Console.WriteLine(now);
+
+- Get only date
+  DateTime today = DateTime.Today;
+  Console.WriteLine(today);
+
+- Create specific date
+  DateTime dob = new DateTime(2000, 5, 15);
+  Console.WriteLine(dob);
+
+- Access parts of date
+  Console.WriteLine("Year: " + dob.Year);
+  Console.WriteLine("Month: " + dob.Month);
+  Console.WriteLine("Day: " + dob.Day);
+
+- Add days, months, years
+  DateTime nextWeek = now.AddDays(7);
+  DateTime nextMonth = now.AddMonths(1);
+  Console.WriteLine(nextWeek);
+  Console.WriteLine(nextMonth);
+
+TimeSpan:
+
+- Difference between dates
+  DateTime start = new DateTime(2025, 1, 1);
+  DateTime end = new DateTime(2025, 9, 15);
+  TimeSpan duration = end - start;
+  Console.WriteLine("Days: " + duration.Days);
+  Console.WriteLine("Total Hours: " + duration.TotalHours);
+
+- Create TimeSpan
+  TimeSpan t = new TimeSpan(2, 30, 0);
+  Console.WriteLine(t);
+
+- Add and subtract TimeSpan
+  TimeSpan t2 = t.Add(new TimeSpan(1, 15, 0));
+  TimeSpan t3 = t.Subtract(new TimeSpan(0, 45, 0));
+  Console.WriteLine(t2);
+  Console.WriteLine(t3);
+
+String:
+
+- Declare string
+  string name = "Talha";
+  string greeting = "Hello " + name;
+  Console.WriteLine(greeting);
+
+- String methods
+  string s = "CSharp Programming";
+  Console.WriteLine(s.Length);
+  Console.WriteLine(s.ToUpper());
+  Console.WriteLine(s.ToLower());
+  Console.WriteLine(s.Contains("Sharp"));
+  Console.WriteLine(s.Substring(0,6));
+  Console.WriteLine(s.Replace("Programming", "Language"));
+
+- Compare strings
+  string a = "hello";
+  string b = "Hello";
+  Console.WriteLine(a == b);
+  Console.WriteLine(a.Equals(b, StringComparison.OrdinalIgnoreCase));
+
+StringBuilder:
+
+- Create StringBuilder
+  StringBuilder sb = new StringBuilder("Hello");
+  sb.Append(" World");
+  sb.Insert(6, "C# ");
+  sb.Replace("World", "Programming");
+  sb.Remove(0, 6);
+  Console.WriteLine(sb);
+
+- StringBuilder length and capacity
+  Console.WriteLine("Length: " + sb.Length);
+  Console.WriteLine("Capacity: " + sb.Capacity);
+
+- Efficient for repeated modifications
+  StringBuilder sb2 = new StringBuilder();
+  for(int i = 1; i <= 5; i++)
+      sb2.Append(i + " ");
+  Console.WriteLine(sb2);
+
+///////////////////////  practice on file concepts solution #9
+
+using System;
+using System.IO;
+
+class Program
+{
+    public static void Main()
+    {
+        
+        string projectFolder = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\.."));
+
+        
+        string assetsFolder = Path.Combine(projectFolder, "Assets");
+        Directory.CreateDirectory(assetsFolder);
+
+        
+        string filePath = Path.Combine(assetsFolder, "filename.txt");
+        string writeText = "Hello from C#!";
+        string newlines = "hi this is my new text!" + Environment.NewLine;
+        File.WriteAllText(filePath, writeText);
+
+        File.AppendAllText(filePath, newlines);
+        string readalltext=File.ReadAllText(filePath);
+        string nextline = "hi this is my practice about File Text!" + Environment.NewLine;
+        File.AppendAllText(filePath, nextline);
+        Console.WriteLine("Todays Practices:");
+        string read = File.ReadAllText(filePath);
+        Console.WriteLine(read);
+
+
+        string[] AlltextLines=File.ReadAllLines(filePath);
+     
+        if(AlltextLines.Length > 0)
+        {
+            Console.WriteLine($"catchable"+AlltextLines[0]);
+           
+
+
+        }
+        var UpdateLines = AlltextLines.Skip(1).ToArray();
+        Console.WriteLine("///////////////////////////");
+        File.WriteAllLines(filePath, UpdateLines);
+        foreach (var line in UpdateLines)
+        {
+            Console.WriteLine(line);
+        }
+
+
+        string newfile = Path.Combine(assetsFolder, "newfile");
+
+        File.Copy(filePath, newfile, true);
+        foreach (var line in File.ReadAllLines(newfile))
+        {
+            Console.WriteLine("New Files Line"+line);
+        }
+
+        Console.ReadLine();
+
+
+    }
+}
+
+|||||||||||||||||||||||||||||||||||||||||||||||||| file practice with Image 
+
+using System;
+using System.IO;
+
+class Program
+{
+    public static void Main()
+    {
+        
+        string projectFolder = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\.."));
+
+        
+        string assetsFolder = Path.Combine(projectFolder, "Assets");
+        Directory.CreateDirectory(assetsFolder);
+
+        string ImageSrouce = @"C:\Users\pc\Pictures\Capture.png";
+
+        String Image_Path = Path.Combine(assetsFolder, Path.GetFileName(ImageSrouce));
+
+
+        File.Copy(ImageSrouce, Image_Path, true);
+        string Correct_Path = Path.Combine("Assets", Path.GetFileName(ImageSrouce));
+
+        Console.WriteLine("My Image Path" + Correct_Path);
+
+        if (File.Exists(Correct_Path))
+        {
+            File.Delete(Correct_Path);
+        }
+
+
+
+        Console.ReadLine();
+
+
+    }
+}
+
+||||||||||||||||||||||||||||||||||||||Exersice
+using System;
+using System.IO;
+
+class Program
+{
+    public static void Main()
+    {
+        
+        string projectFolder = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\.."));
+
+        
+        string assetsFolder = Path.Combine(projectFolder, "Assets");
+        Directory.CreateDirectory(assetsFolder);
+        Console.WriteLine("Excersise:" );
+        string text = "hi dear my name talhaRasheed and i'm graduated from BIIT";
+
+        String Image_Path = Path.Combine(assetsFolder, "Excersice_File.txt");
+
+        File.WriteAllText(Image_Path, text);    
+
+        var reading= new StreamReader(Image_Path).ReadToEnd();
+
+        Console.WriteLine(reading);
+
+        var count = reading.Split(' ');
+
+        var trach = "";
+        foreach(var line in count)
+        {
+            Console.WriteLine(line);
+            if (line.Length > trach.Length) { 
+            trach=line;
+            }
+        }
+        Console.WriteLine($"Longest Word : {trach}");
+
+
+
+
+
+        Console.ReadLine();
+
+
+    }
+}
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ practice debbging
+
+using System;
+using System.IO;
+
+class Program
+{
+    public static void Main()
+    {
+
+        Console.WriteLine("Enter a number:");
+        string input = Console.ReadLine();
+
+        
+        int number = int.Parse(input);
+
+       
+        int result = 10 / number;
+
+        Console.WriteLine("Result is: " + result);
+
+        Console.ReadLine();
+
+
+    }
+}

@@ -1,0 +1,13 @@
+# Visual Studio cache/options
+.vs/
+*.user
+*.suo
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.dll
+*.exe
+*.pdb
+*.cache

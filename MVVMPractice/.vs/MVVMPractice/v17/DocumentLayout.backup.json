@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\C#-DotNet-Crouse\\MVVMPractice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|d:\\c#-dotnet-crouse\\mvvmpractice\\mvvmpractice\\views\\practiceui_2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|solutionrelative:mvvmpractice\\views\\practiceui_2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|d:\\c#-dotnet-crouse\\mvvmpractice\\mvvmpractice\\views\\practiceui_2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|solutionrelative:mvvmpractice\\views\\practiceui_2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|d:\\c#-dotnet-crouse\\mvvmpractice\\mvvmpractice\\viewmodels\\bindingpractice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|solutionrelative:mvvmpractice\\viewmodels\\bindingpractice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|d:\\c#-dotnet-crouse\\mvvmpractice\\mvvmpractice\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|solutionrelative:mvvmpractice\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|d:\\c#-dotnet-crouse\\mvvmpractice\\mvvmpractice\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{00E4DB40-8D45-4BEC-9431-84A031EB5202}|MVVMPractice\\MVVMPractice.csproj|solutionrelative:mvvmpractice\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 384,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PracticeUI_2.xaml",
+              "DocumentMoniker": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Views\\PracticeUI_2.xaml",
+              "RelativeDocumentMoniker": "MVVMPractice\\Views\\PracticeUI_2.xaml",
+              "ToolTip": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Views\\PracticeUI_2.xaml",
+              "RelativeToolTip": "MVVMPractice\\Views\\PracticeUI_2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-16T06:29:28.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PracticeUI_2.xaml.cs",
+              "DocumentMoniker": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Views\\PracticeUI_2.xaml.cs",
+              "RelativeDocumentMoniker": "MVVMPractice\\Views\\PracticeUI_2.xaml.cs",
+              "ToolTip": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Views\\PracticeUI_2.xaml.cs",
+              "RelativeToolTip": "MVVMPractice\\Views\\PracticeUI_2.xaml.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T06:29:32.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "MVVMPractice\\Models\\Student.cs",
+              "ToolTip": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\Models\\Student.cs",
+              "RelativeToolTip": "MVVMPractice\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T05:53:32.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BindingPractice.cs",
+              "DocumentMoniker": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\ViewModels\\BindingPractice.cs",
+              "RelativeDocumentMoniker": "MVVMPractice\\ViewModels\\BindingPractice.cs",
+              "ToolTip": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\ViewModels\\BindingPractice.cs",
+              "RelativeToolTip": "MVVMPractice\\ViewModels\\BindingPractice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T05:52:26.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\App.xaml",
+              "RelativeDocumentMoniker": "MVVMPractice\\App.xaml",
+              "ToolTip": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\App.xaml",
+              "RelativeToolTip": "MVVMPractice\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-16T05:42:43.036Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 16,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+﻿<Window x:Class="MVVMPractice.Views.PanelPractice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVMPractice.Views"
+        mc:Ignorable="d"
+        Title="PanelPractice" Height="450" Width="800">
+    <!-- Main container -->
+    <DockPanel LastChildFill="True">
+
+        <!-- Top header using DockPanel -->
+        <StackPanel DockPanel.Dock="Top" Background="#0078D7" Orientation="Horizontal" Height="50">
+            <TextBlock Text="WPF Panels Practice" 
+                       Foreground="White" 
+                       FontSize="20"
+                       VerticalAlignment="Center" 
+                       Margin="20,0,0,0"/>
+        </StackPanel>
+
+        <!-- right menu using StackPanel -->
+        <StackPanel DockPanel.Dock="Right" Background="#EAEAEA" Width="150">
+            <Button Content="Home" Margin="10" Height="30"/>
+            <Button Content="About" Margin="10" Height="30"/>
+            <Button Content="Settings" Margin="10" Height="30"/>
+        </StackPanel>
+        <!-- left menu using StackPanel -->
+        <StackPanel DockPanel.Dock="Left" Background="#EAEAEA" Width="150">
+            <Button Content="Home" Margin="10" Height="30"/>
+            <Button Content="About" Margin="10" Height="30"/>
+            <Button Content="Settings" Margin="10" Height="30"/>
+            <!-- List Box View -->
+            <ListBox VirtualizingStackPanel.IsVirtualizing="True" BorderThickness="10" >
+                <TextBlock  Text="ID :  "/>
+                <TextBlock  Text="Name :  "/>
+            </ListBox>
+        </StackPanel>
+
+        <!-- Footer using DockPanel -->
+        <DockPanel DockPanel.Dock="Bottom" Background="#D9D9D9" Height="40">
+            <TextBlock Text="© 10/15/2025 All Concepts Completed"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"/>
+        </DockPanel>
+
+        <!-- Center area using Grid -->
+        <Grid Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <!-- Top section using WrapPanel -->
+            <WrapPanel Grid.Row="0" Margin="0,0,0,10">
+                <Button Content="Button 1" Width="100" Margin="5"/>
+                <Button Content="Button 2" Width="100" Margin="5"/>
+                <Button Content="Button 3" Width="100" Margin="5"/>
+                <Button Content="Button 4" Width="100" Margin="5"/>
+                <Button Content="Button 5" Width="100" Margin="5"/>
+                <Button Content="Button 6" Width="100" Margin="5"/>
+                <Button Content="Button 7" Width="100" Margin="5"/>
+                <Button Content="Button 8" Width="100" Margin="5"/>
+            </WrapPanel>
+
+            <!-- Middle section using UniformGrid -->
+            <UniformGrid Grid.Row="1" Rows="2" Columns="3" Margin="0,10,0,10" >
+                <Border Background="#E3F2FD" Margin="5">
+                    <TextBlock Text="Tile 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border Background="#BBDEFB" Margin="5">
+                    <TextBlock Text="Tile 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border Background="#90CAF9" Margin="5">
+                    <TextBlock Text="Tile 3" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border Background="#64B5F6" Margin="5">
+                    <TextBlock Text="Tile 4" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border Background="#42A5F5" Margin="5">
+                    <TextBlock Text="Tile 5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Border>
+                <Border Background="#2196F3" Margin="5">
+                    <TextBlock Text="Tile 6" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White"/>
+                </Border>
+            </UniformGrid>
+
+            <!-- Bottom section using Canvas -->
+            <Canvas Grid.Row="2" Height="150" Background="#F5F5F5">
+                <Ellipse Width="60" Height="60" Fill="LightCoral" Canvas.Right="150" Canvas.Top="40"/>
+                <Rectangle Width="70" Height="50" Fill="LightGreen" Canvas.Left="150" Canvas.Top="50"/>
+                <Button Content="Canvas Btn"  Canvas.Bottom="10" Width="100" Margin="189,0,0,0"/>
+            </Canvas>
+        </Grid>
+    </DockPanel>
+</Window>

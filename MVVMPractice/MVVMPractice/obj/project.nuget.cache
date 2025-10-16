@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LXdgjAJHifk=",
+  "success": true,
+  "projectFilePath": "D:\\C#-DotNet-Crouse\\MVVMPractice\\MVVMPractice\\MVVMPractice.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
